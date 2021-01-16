@@ -100,6 +100,96 @@ namespace NUnitTestCalculadora
             //Assert=verificacion
             Assert.AreEqual(esperado, resultado);
         }
+        [Test]
+        public void TestResta1()
+        {
+            //Arrange=preparacion
+            int num1 = -5;
+            int num2 = 5;
+            int esperado = -10;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.restapost(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestResta2()
+        {
+            //Arrange=preparacion
+            int num1 = 25;
+            int num2 = 5;
+            int esperado = 20;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.restapost(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestResta3()
+        {
+            //Arrange=preparacion
+            int num1 = 30;
+            int num2 = 40;
+            int esperado = -10;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.restapost(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestResta4()
+        {
+            //Arrange=preparacion
+            int num1 = -3;
+            int num2 = 3;
+            int esperado = -6;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.restaget(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestResta5()
+        {
+            //Arrange=preparacion
+            int num1 = 15;
+            int num2 = 4;
+            int esperado = 11;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.restaget(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestResta6()
+        {
+            //Arrange=preparacion
+            int num1 = 666;
+            int num2 = 66;
+            int esperado = 600;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.restaget(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
 
     }
 }
