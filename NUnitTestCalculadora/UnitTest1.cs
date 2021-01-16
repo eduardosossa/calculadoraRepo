@@ -280,6 +280,95 @@ namespace NUnitTestCalculadora
             //Assert=verificacion
             Assert.AreEqual(esperado, resultado);
         }
+        [Test]
+        public void Testdiv1()
+        {
+            //Arrange=preparacion
+            float num1 = 4;
+            float num2 = 2;
+            float esperado = 2;
+            CalculadoraController calc = new CalculadoraController();
 
+            //Act=ejecucion
+            float resultado = calc.divpost(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void Testdiv2()
+        {
+            //Arrange=preparacion
+            float num1 = 20;
+            float num2 = 2;
+            float esperado = 10;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            float resultado = calc.divpost(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void Testdiv3()
+        {
+            //Arrange=preparacion
+            float num1 = 420;
+            float num2 = 6;
+            float esperado = 70;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            float resultado = calc.divpost(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void Testdiv4()
+        {
+            //Arrange=preparacion
+            float num1 = 420;
+            float num2 = 6;
+            float esperado = 70;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            float resultado = calc.divget(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void Testdiv5()
+        {
+            //Arrange=preparacion
+            float num1 = 60;
+            float num2 = -2;
+            float esperado = -30;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            float resultado = calc.divget(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void Testdiv6()
+        {
+            //Arrange=preparacion
+            float num1 = 80;
+            float num2 = -2;
+            float esperado = -40;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            float resultado = calc.divget(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
     }
 }
