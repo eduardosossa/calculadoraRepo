@@ -367,7 +367,7 @@ namespace NUnitTestCalculadora
             //Act=ejecucion
             float resultado = calc.divget(num1, num2);
 
-            //Assert=verificacion
+            //Assert=verificacions
             Assert.AreEqual(esperado, resultado);
         }
     }
