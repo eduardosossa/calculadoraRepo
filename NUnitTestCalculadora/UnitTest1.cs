@@ -190,6 +190,96 @@ namespace NUnitTestCalculadora
             //Assert=verificacion
             Assert.AreEqual(esperado, resultado);
         }
+        [Test]
+        public void Testmulti1()
+        {
+            //Arrange=preparacion
+            int num1 = 6;
+            int num2 = 9;
+            int esperado = 54;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.multipost(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void Testmulti2()
+        {
+            //Arrange=preparacion
+            int num1 = -5;
+            int num2 = 3;
+            int esperado = -15;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.multipost(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void Testmulti3()
+        {
+            //Arrange=preparacion
+            int num1 = 10;
+            int num2 = 10;
+            int esperado = 100;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.multipost(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void Testmulti4()
+        {
+            //Arrange=preparacion
+            int num1 = 100;
+            int num2 = 100;
+            int esperado = 10000;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.multiget(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void Testmulti5()
+        {
+            //Arrange=preparacion
+            int num1 = 69;
+            int num2 = -420;
+            int esperado = -28980;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.multiget(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void Testmulti6()
+        {
+            //Arrange=preparacion
+            int num1 = -6;
+            int num2 = -9;
+            int esperado = 54;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.multipost(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+        }
 
     }
 }
